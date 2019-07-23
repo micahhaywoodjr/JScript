@@ -6,31 +6,66 @@
 <h1>Register</h1>
     <body>
         <form action="">
-        <label for="fn">First Name:</label>
-        <input type="text" name="fn" placeholder="John" id="fn">
-        <label for="ln">Last Name:</label>
-        <input type="text" name="ln" placeholder="Smith" id="ln">
+        <label for="first">First Name:</label>
+        <input type="text" name="fn" placeholder="John" id="first" required>
+        <label for="last">Last Name:</label>
+        <input type="text" name="ln" placeholder="Smith" id="last" required>
         </Form>
-<form action="">
-        <label for="em">Email</label>
-    <input type="email" placeholder="email" id="em" required>
-    <label for="pw">Password</label>
-    <input type="password" id="pw">
-</form>
-        <form action="">
-        <label for="male">Male </label>
+
+        <div>
+        <label for="male">Male 
         <input type="radio" name="MorF" id="male" value="male">
+    </label>
         <label for="female">Female </label>
         <input type="radio" name="MorF" id="female" value="female">
-    </form>
-<form action="">
-    <label for="pickList" name="pL"></label>
-    <option value="January"></option>
-    <option value="February"></option>
-</form>
-    <form action="">
-I agree to the terms and conditions<input type="checkbox" name="cb" id="cb">
-            </form>
-            <button>Submit</button>
+        <label for="female">Other </label>
+        <input type="radio" name="MorF" id="female" value="other">
+    </div>
+    <diiv>
+        <label for="em"> Email : 
+        <input name="email" type="email" placeholder="email" required>
+    </label>
+        <label for="pw"> Password :
+        <input type="password" name="password" pattern =".{5,20}" required title="Password must be between 5 and 10 characters.">
+       
+    </label>
+    </diiv>
+
+    <div>
+      <label>
+          Birthday :
+        <select name = "month">
+                <option>Month</option>
+                <option value = "01">Jan</option>
+                <option value = "02">Feb</option>
+                <option value = "03">Mar</option>
+
+
+        </select>
+        <select name = "day">
+                <option>Day</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+
+
+        </select>
+        <select nane = "year">
+                <option>Year</option>
+                <option>2001</option>
+                <option>2002</option>
+                <option>2003</option>
+
+
+        </select>
+      </label>
+    </div>
+    <div>
+        <Label for = "agreed">I agree to the terms and conditions: </Label>
+<input type="checkbox" name="cb" id="agreed">
+
+        <input type="submit" >
+    </div>
+         
     </body>
 </html>
