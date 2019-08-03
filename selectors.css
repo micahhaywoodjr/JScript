@@ -2,45 +2,75 @@
 DO NOT ALTER THE EXISTING HTML TO DO THIS.  WRITE ONLY CSS!
 
 /* Give the <body> element a background of #bdc3c7*/
+body{
+    background : #bdc3c7;
+}
 
+h1{
+    color: #9b59b6;
 
-/* Make the <h1> element #9b59b6*/
+}
+h2{
+    color : oragne;
+}
+li{
+    color : blue;
+}
+p{
+    background : yellow;
+}
+input{
+    border: 3px solid red;
+}
 
+.hello{
+    background: white;
+}
+#special {
+    border: 2px solid rgb(0, 100, 200);
+}
+div p{
+font-size: 25px;
+}
 
-/* Make all <h2> elements orange */
+input [type="text"]{
 
+    background : gray;
+}
 
-/* Make all <li> elements blue(pick your own hexadecimal blue)*/ 
+div:nth-of-type(3) p{
+    background: pink;
+}
 
+div:nth-of-type(3)p:nth-of-type(2) {
+  border : 5px solid white;
+}
 
-/*Change the background on every paragraph to be yellow*/
+div:nth-of-type(3) em{
+    color: white;
+    font-size: 20px;
+}
 
+input:checked {
+    margin-left : 50px;
+}
 
-/*Make all inputs have a 3px red border*/
+label {
+    text-transform: uppercase;
+    }
 
+    #special::first-letter{
+        color:green;
+        font-size: 100px;
+    }
 
-/* Give everything with the class 'hello' a white background*/
+    h1:hover {
+        color :blue;
+    }
 
-
-/* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
-
-
-/*Make all the <p>'s that are nested inside of divs 25px font(font-size: 25px)*/
-
-
-/*Make only inputs with type 'text' have a gray background*/
-
-
-/* Give both <p>'s inside the 3rd <div> a pink background*/
-
-
-/* Give the 2nd <p> inside the 3rd <div> a 5px white border*/
-
-
-/* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
-
-
-
+    a:visited{
+        color: gray;
+    }
 /*BONUS CHALLENGES*/
 /*You may need to research some other selectors and properties*/
 
