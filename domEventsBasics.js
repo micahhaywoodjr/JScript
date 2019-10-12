@@ -1,1 +1,16 @@
-alert("Oops i did it again");
+var button = document.querySelector("button");
+//var isPurple = false;
+button.addEventListener("click", function(){
+/*     if(isPurple){
+        document.body.style.background = "white";
+        //isPurple = false;
+    }else{
+    document.body.style.background = "purple";
+    //isPurple = true;
+    }
+    isPurple = !isPurple;
+    // Can do this with the below adn style tag
+ */
+document.body.classList.toggle("purple");
+
+})
